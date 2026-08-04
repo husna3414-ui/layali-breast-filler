@@ -30,7 +30,7 @@
     <img class="logo" src="logo.jpg" alt="Layali Clinic">
     <span class="kicker">Breast Filler · Consent &amp; Consultation</span>
     <h1>Consent &amp; Consultation Form</h1>
-    <p class="sub">Treatment: non-surgical breast filler (hyaluronic acid). Please complete this before your appointment and read every section carefully — your signature confirms you understand and agree to all of it.</p>
+    <p class="sub">Treatment: non-surgical breast filler (hyaluronic acid). Please complete this before your appointment and read every section carefully. This document supports, but does not replace, your consultation. Please ask questions about anything you do not understand. Signing confirms that the proposed treatment, alternatives, limitations and risks have been discussed with you and that you voluntarily consent to the agreed treatment plan.</p>
   </header>
 
   <!-- The data-autoresponse below is the confirmation email the client receives.
@@ -113,7 +113,7 @@ info.lushlips@gmail.com
       <p>Non-surgical breast enhancement with hyaluronic acid (HA) filler is a <b>subtle volumising and contouring</b> treatment. Because the chest is a large area, it typically requires <b>large quantities of product and more than one session</b> to build a safe, natural result gradually. The amount needed is highly individual.</p>
       <div class="mini avoid"><h4>Please understand</h4><ul>
         <li>This is <b>NOT a surgical implant</b> and does not create an implant-sized increase.</li>
-        <li>Results are <b>subtle</b> and <b>temporary</b> — typically lasting around 12–18 months before breaking down.</li>
+        <li>Results are <b>subtle</b> and <b>temporary</b>. The visible cosmetic result is expected to reduce gradually, but the rate of breakdown is unpredictable, and complete disappearance by a particular date cannot be guaranteed.</li>
         <li><b>Multiple sessions</b> are usually needed; a top-up is common a few weeks after the first session.</li>
         <li>Full results settle over roughly 2–6 weeks as swelling reduces.</li>
         <li>Results vary between clients and are <b>not guaranteed</b>.</li></ul></div>
@@ -171,6 +171,21 @@ info.lushlips@gmail.com
           <label class="opt"><input type="checkbox" name="Pregnancy/hormonal status" value="Taking hormonal contraception / HRT"><span>Hormonal contraception / HRT</span></label>
           <label class="opt"><input type="checkbox" name="Pregnancy/hormonal status" value="None of these apply to me"><span>None of these apply to me</span></label>
         </div><div class="err-msg">Please make a selection.</div></div>
+
+      <!-- Prose card + acknowledgement covering FUTURE pregnancy / breastfeeding.
+           We do NOT promise future breastfeeding will be unaffected. -->
+      <div class="prose" style="margin-top:6px">
+        <p>Even if you are not currently pregnant or breastfeeding, please understand the following about <b>future</b> pregnancy and breastfeeding:</p>
+        <div class="mini avoid"><ul>
+          <li>The long-term effects on future breastfeeding may <b>not be established</b> for this product.</li>
+          <li>The natural breast changes of pregnancy may <b>alter your result</b>.</li>
+          <li>Pregnancy and lactation can make filler-related lumps or swelling <b>harder to assess</b>.</li>
+          <li>Any breast symptom that appears during pregnancy or breastfeeding still requires <b>medical assessment</b> — do not assume it is caused by filler.</li>
+          <li>You must <b>disclose your filler history</b> to your maternity and breast-health teams.</li></ul></div>
+      </div>
+      <div class="f" data-group><div class="opts" data-min="1" data-single>
+        <label class="opt"><input type="checkbox" name="Future pregnancy acknowledgement" value="I understand that long-term effects on future breastfeeding may not be established, that pregnancy may alter my result and make filler-related changes harder to assess, that any breast symptom in pregnancy/breastfeeding still needs medical assessment, and that I must disclose my filler history to maternity and breast-health teams."><span>I understand these points about future pregnancy and breastfeeding, and that I must disclose my breast-filler history to any maternity and breast-health teams.</span></label>
+      </div><div class="err-msg">Please confirm to continue.</div></div>
     </div>
 
     <!-- ===== 6. Allergies ===== -->
@@ -185,7 +200,7 @@ info.lushlips@gmail.com
           <label class="opt"><input type="checkbox" name="Allergies" value="Latex"><span>Latex</span></label>
           <label class="opt"><input type="checkbox" name="Allergies" value="Chlorhexidine / antiseptic"><span>Chlorhexidine / antiseptic</span></label>
           <label class="opt"><input type="checkbox" name="Allergies" value="Plasters / dressings"><span>Plasters / dressings</span></label>
-          <label class="opt"><input type="checkbox" name="Allergies" value="Foods (e.g. eggs)"><span>Foods (e.g. eggs)</span></label>
+          <label class="opt"><input type="checkbox" name="Allergies" value="Hyaluronidase (the enzyme used to dissolve HA filler)"><span>Hyaluronidase (used to dissolve HA filler)</span></label>
           <label class="opt"><input type="checkbox" name="Allergies" value="None of the above"><span>None of the above</span></label>
         </div><div class="err-msg">Please make a selection.</div></div>
       <div class="f"><label class="q">If yes, please provide details</label><textarea name="Allergy details"></textarea></div>
@@ -233,15 +248,99 @@ info.lushlips@gmail.com
       <div class="f"><label class="q">Please provide details</label><textarea name="Contraindication details"></textarea></div>
     </div>
 
-    <!-- ===== 9. Breast screening acknowledgement ===== -->
+    <!-- ===== 9. Detailed breast-health screening =====
+         A comprehensive breast screen. The tick-all-that-apply list uses
+         data-none so ticking "None of these" clears the others. Free-text
+         and date fields capture any previous breast filler and the most
+         recent breast screening. -->
+    <div class="card">
+      <div class="sec-h"><span class="sec-n">9</span><h2 class="sec-t">Breast-health screening</h2></div>
+      <div class="sec-d">Please answer honestly — any of these may need checking before we can treat you safely.</div>
+      <div class="f" data-group><label class="q">Do any of the following apply to you, now or in the past? <span class="req">*</span><div class="hint">Tick all that apply. If none apply, tick "None of these".</div></label>
+        <div class="opts grid-opts" data-min="1" data-none="None of these">
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Current or previous breast lump"><span>Current or previous breast lump</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Breast pain unrelated to the menstrual cycle"><span>Breast pain unrelated to the menstrual cycle</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Nipple discharge (especially bloody)"><span>Nipple discharge (especially bloody)</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="New nipple inversion"><span>New nipple inversion</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Skin dimpling or puckering"><span>Skin dimpling or puckering</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Persistent breast rash or skin thickening"><span>Persistent breast rash or skin thickening</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Change in breast size or shape"><span>Change in breast size or shape</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Swelling or lump in the armpit"><span>Swelling or lump in the armpit</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Previous mastitis or breast abscess"><span>Previous mastitis or breast abscess</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Previous breast biopsy"><span>Previous breast biopsy</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Previous abnormal mammogram / ultrasound / MRI"><span>Previous abnormal mammogram / ultrasound / MRI</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Previous breast cancer treatment or radiotherapy"><span>Previous breast cancer treatment or radiotherapy</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Previous breast reduction / uplift / reconstruction / fat transfer"><span>Previous breast reduction / uplift / reconstruction / fat transfer</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Family history of breast or ovarian cancer"><span>Family history of breast or ovarian cancer</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="BRCA or other genetic-cancer risk"><span>BRCA or other genetic-cancer risk</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="Current or planned investigation by a GP or breast clinic"><span>Current/planned investigation by a GP or breast clinic</span></label>
+          <label class="opt"><input type="checkbox" name="Breast screening" value="None of these"><span>None of these</span></label>
+        </div><div class="err-msg">Please make a selection (tick "None of these" if none apply).</div></div>
+      <div class="f"><label class="q">Please give details for anything ticked above</label><textarea name="Breast screening details"></textarea></div>
+
+      <!-- Previous breast filler — captured here as free text/date, NOT combined with implants. -->
+      <div class="f"><label class="q">Have you had breast filler before? If yes, please give the product, date, amount and injector<div class="hint">Leave blank if you have never had breast filler.</div></label><textarea name="Previous breast filler details" placeholder="Product · date · amount (ml) · injector / clinic"></textarea></div>
+
+      <div class="row">
+        <div class="f"><label class="q">Date of your most recent breast screening<div class="hint">Mammogram, ultrasound or MRI. Leave blank if never.</div></label><input type="date" name="Most recent breast screening date"></div>
+        <div class="f"><label class="q">Outcome of that screening</label><input type="text" name="Most recent breast screening outcome" placeholder="e.g. normal / recalled / awaiting result"></div>
+      </div>
+    </div>
+
+    <!-- ===== 9a. Breast implants — its OWN section, separate from filler ===== -->
+    <div class="card">
+      <div class="sec-h"><span class="sec-n">9</span><h2 class="sec-t">Breast implants</h2></div>
+      <div class="sec-d">Existing implants change the risks and management of breast filler, so we ask about them separately.</div>
+      <div class="f" data-group><label class="q">Do you currently have breast implants? <span class="req">*</span></label>
+        <div class="opts" data-min="1" data-single>
+          <label class="opt"><input type="checkbox" name="Has breast implants" value="Yes"><span>Yes</span></label>
+          <label class="opt"><input type="checkbox" name="Has breast implants" value="No"><span>No</span></label>
+        </div><div class="err-msg">Please choose one.</div></div>
+
+      <!-- The fields below only need completing if you answered "Yes" above. -->
+      <div class="row">
+        <div class="f"><label class="q">Implant brand and size</label><input type="text" name="Implant brand and size"></div>
+        <div class="f"><label class="q">Date and place of surgery</label><input type="text" name="Implant surgery date and place"></div>
+      </div>
+      <div class="f" data-group><label class="q">Implant position</label>
+        <div class="opts" data-single>
+          <label class="opt"><input type="checkbox" name="Implant position" value="Over the muscle (subglandular)"><span>Over the muscle</span></label>
+          <label class="opt"><input type="checkbox" name="Implant position" value="Under the muscle (submuscular)"><span>Under the muscle</span></label>
+          <label class="opt"><input type="checkbox" name="Implant position" value="Not sure"><span>Not sure</span></label>
+        </div></div>
+      <div class="f"><label class="q">Any previous rupture, capsular contracture, infection or revision?</label><textarea name="Implant complications history"></textarea></div>
+      <div class="row">
+        <div class="f" data-group><label class="q">Do you have your implant card available?</label>
+          <div class="opts" data-single>
+            <label class="opt"><input type="checkbox" name="Implant card available" value="Yes"><span>Yes</span></label>
+            <label class="opt"><input type="checkbox" name="Implant card available" value="No"><span>No</span></label>
+          </div></div>
+        <div class="f" data-group><label class="q">Has your implant surgeon approved additional filler?</label>
+          <div class="opts" data-single>
+            <label class="opt"><input type="checkbox" name="Implant surgeon approved filler" value="Yes"><span>Yes</span></label>
+            <label class="opt"><input type="checkbox" name="Implant surgeon approved filler" value="No"><span>No</span></label>
+            <label class="opt"><input type="checkbox" name="Implant surgeon approved filler" value="Not asked"><span>Not asked</span></label>
+          </div></div>
+      </div>
+      <div class="f"><label class="q">Any current implant symptoms?<div class="hint">e.g. pain, firmness, shape change, swelling.</div></label><textarea name="Current implant symptoms"></textarea></div>
+      <div class="notice warn" style="margin-top:6px">If you have implants, please understand that an infection involving filler near an implant could <b>affect the implant itself</b> and require specialist or surgical management. <b>Capsular contracture</b> (a tightening, hardening capsule around an implant) has been reported in people with implants. We may not be able to treat you until your implant surgeon has been consulted.</div>
+    </div>
+
+    <!-- ===== 9b. Breast imaging — stronger warning + required declaration ===== -->
     <div class="card prose">
-      <div class="sec-h"><span class="sec-n">9</span><h2 class="sec-t">Breast health &amp; screening</h2></div>
-      <p>Breast filler is <b>not</b> a substitute for breast screening or for having any lump or change checked by your GP. Filler in the chest can also show up on and affect breast imaging (mammograms and ultrasound).</p>
-      <div class="f" data-group><div class="opts" data-all>
-        <label class="opt"><input type="checkbox" name="Breast health acknowledgement" value="I have no current undiagnosed breast lump or change, or any such change has been checked by my GP/specialist."><span>I have no current undiagnosed breast lump or change (or any such change has been checked by my GP/specialist).</span></label>
-        <label class="opt"><input type="checkbox" name="Breast health acknowledgement" value="I understand breast filler is not a substitute for breast screening and I will continue any recommended screening."><span>I understand breast filler is <b>not a substitute for breast screening</b>, and I will continue any recommended screening.</span></label>
-        <label class="opt"><input type="checkbox" name="Breast health acknowledgement" value="I will tell any future mammogram or ultrasound team that I have had breast filler."><span>I will <b>tell any future mammogram/ultrasound team</b> that I have had breast filler.</span></label>
-      </div><div class="err-msg">Please confirm all three (or speak to your practitioner first).</div></div>
+      <div class="sec-h"><span class="sec-n">9</span><h2 class="sec-t">Breast filler &amp; future breast imaging</h2></div>
+      <p>Breast filler is <b>not</b> a substitute for breast screening or for having any lump or change checked by your GP. It is important that you understand injected HA filler in the chest may:</p>
+      <div class="mini avoid"><ul>
+        <li>appear as <b>collections, masses or cyst-like areas</b> on imaging;</li>
+        <li><b>obscure normal breast tissue</b>;</li>
+        <li><b>mimic breast abnormalities</b>;</li>
+        <li><b>reduce the diagnostic quality</b> of mammography;</li>
+        <li>lead to <b>additional ultrasound, MRI, biopsy or specialist review</b>;</li>
+        <li><b>remain visible after the cosmetic result appears to have faded</b>;</li>
+        <li><b>complicate future breast surgery</b>.</li></ul></div>
+      <div class="f" data-group><div class="opts" data-min="1" data-single>
+        <label class="opt"><input type="checkbox" name="Breast imaging acknowledgement" value="I understand that breast filler may complicate future breast screening or investigation and could result in additional imaging, referral, biopsy or other procedures. I understand that I must disclose the product, date, volume and location of all breast filler injections to every future radiographer, radiologist, breast clinician and surgeon."><span>I understand that breast filler may complicate future breast screening or investigation and could result in additional imaging, referral, biopsy or other procedures. I understand that I <b>must disclose the product, date, volume and location</b> of all breast-filler injections to <b>every future radiographer, radiologist, breast clinician and surgeon</b>.</span></label>
+      </div><div class="err-msg">Please confirm to continue.</div></div>
     </div>
 
     <!-- ===== 10. What the treatment involves ===== -->
@@ -255,7 +354,7 @@ info.lushlips@gmail.com
     <!-- ===== 11. Benefits & alternatives ===== -->
     <div class="card prose">
       <div class="sec-h"><span class="sec-n">11</span><h2 class="sec-t">Benefits, results &amp; alternatives</h2></div>
-      <p>Possible benefits include subtle added volume, softer cleavage definition, minor asymmetry improvement, no scars and minimal downtime compared with surgery. Results are subtle, temporary (typically ~12–18 months) and vary between individuals; more than one session and ongoing maintenance are usually needed.</p>
+      <p>Possible benefits include subtle added volume, softer cleavage definition and minor asymmetry improvement. There is no planned surgical incision, but needle-entry marks, pigment change and scarring can occur; a serious complication may require drainage or surgery and may result in permanent scarring. Recovery may be shorter than surgical augmentation for some clients, but significant swelling, pain, infection or another complication may cause extended downtime or require hospital or surgical treatment. The visible cosmetic result is expected to reduce gradually, but the rate of breakdown is unpredictable, results vary between individuals, and more than one session plus ongoing maintenance are usually needed.</p>
       <p>Alternatives include: <b>no treatment</b>, <b>surgical breast augmentation (implants)</b>, and <b>fat transfer</b> — both surgical options carried out by a surgeon, not at this clinic. I understand I have the right to decline treatment or choose an alternative.</p>
     </div>
 
@@ -278,11 +377,26 @@ info.lushlips@gmail.com
       <div class="mini avoid"><h4>Rare but potentially serious</h4><ul>
         <li><b>Vascular occlusion</b> — filler blocking a blood vessel, which can cause tissue death (necrosis)</li>
         <li><b>Infection, abscess or biofilm</b> in the breast tissue — higher with large volumes and deep tissue; may need antibiotics, drainage or dissolving; can appear weeks or months later</li>
+        <li>Atypical or difficult-to-treat infection, and recurrent infection after apparently successful treatment</li>
+        <li>Breast cellulitis; mastitis-like inflammation</li>
+        <li>Haematoma or internal bleeding; seroma or fluid collection; cyst-like filler collections</li>
         <li><b>Granuloma or nodules</b> that may require dissolving or, rarely, surgical management, and could be persistent</li>
+        <li>Capsule or pseudocapsule formation; persistent breast hardening</li>
+        <li>Skin ulceration or wound breakdown; chronic draining wound; loss of skin or breast tissue</li>
         <li>Filler embolism — filler entering a blood vessel and travelling elsewhere; very rare but can be serious</li>
+        <li>Filler migration into the chest, abdominal wall, axilla or other tissues</li>
+        <li>Enlarged or reactive lymph nodes</li>
+        <li>Chronic pain; altered breast or nipple sensation; changes in nipple position</li>
+        <li>Worsening ptosis / loose skin as filler reduces; noticeable differences between breasts as filler breaks down unevenly</li>
+        <li>Need for aspiration, drainage or biopsy; need for surgical removal</li>
+        <li>Permanent breast deformity; permanent scarring after treating a complication</li>
+        <li>Difficulty having future implants, uplift, reduction or other breast surgery</li>
+        <li>Inability to remove every trace of filler; recurrence after dissolving or drainage</li>
         <li>Damage to underlying structures (blood vessels, nerves, soft tissue)</li>
         <li>Skin changes — pigment change, prolonged redness, scarring (including keloid)</li>
         <li>Immediate hypersensitivity reaction, including, very rarely, anaphylaxis</li></ul></div>
+      <div class="notice warn"><b>Extremely rare — systemic embolic complications.</b> Filler entering the bloodstream has, very rarely, been linked to <b>pulmonary and ocular complications</b>: sudden visual disturbance or visual loss, severe breathlessness, chest pain, or neurological symptoms. Seek emergency help immediately if these occur.</div>
+      <div class="notice">Because some injections lie near the chest wall, there is a <b>rare possibility of pleural injury and pneumothorax</b> (air around the lung).</div>
       <p>I understand that HA breast filler is <b>not a surgical implant</b>, the result is <b>subtle and temporary</b>, more than one session is usually needed, and results cannot be guaranteed. I understand these risks and still wish to proceed.</p>
       <div class="f" data-group><div class="opts" data-min="1" data-single>
         <label class="opt"><input type="checkbox" name="Risks acknowledgement" value="I have read, understood and accept all the risks, complications and side effects listed above, and still wish to proceed."><span>I have read, understood and <b>accept all the risks, complications and side effects</b> listed above, and still wish to proceed.</span></label>
@@ -291,18 +405,34 @@ info.lushlips@gmail.com
 
     <!-- ===== 13. Vascular occlusion & emergencies ===== -->
     <div class="card prose">
-      <div class="sec-h"><span class="sec-n">13</span><h2 class="sec-t">Vascular occlusion &amp; emergencies</h2></div>
-      <p>A vascular occlusion occurs when filler blocks or compresses a blood vessel. Although rare, this is a <b>medical emergency</b>. Possible signs include:</p>
+      <div class="sec-h"><span class="sec-n">13</span><h2 class="sec-t">Emergencies &amp; when to get urgent help</h2></div>
+      <p>A vascular occlusion occurs when filler blocks or compresses a blood vessel. Although rare, this is a <b>medical emergency</b>. Get <b>urgent help immediately</b> if you develop any of the following after treatment:</p>
       <div class="notice warn"><ul style="margin:0;padding-left:18px">
-        <li>Severe or increasing pain out of proportion to what's expected</li>
-        <li>Skin going white (blanching), or grey, blue, purple or mottled</li>
-        <li>Skin becoming cold, dusky or blistering</li>
-        <li>Signs of infection: spreading redness/heat, pus, fever, feeling unwell</li>
-        <li>Any breathing difficulty, chest pain, facial/throat swelling or feeling very unwell</li>
+        <li>Sudden <b>shortness of breath</b>; new or severe <b>chest pain</b>; <b>coughing blood</b></li>
+        <li>Sudden <b>visual disturbance or visual loss</b></li>
+        <li>Severe headache, weakness, confusion or collapse</li>
+        <li>Rapidly enlarging or very tense breast; heavy bleeding</li>
+        <li>Severe or increasing breast pain (out of proportion to what's expected)</li>
+        <li>Skin going white (blanching), or grey, blue, purple or mottled; skin cold or dusky</li>
+        <li>Extensive blistering or skin breakdown; blackening or loss of breast skin</li>
+        <li>High fever, shaking or other signs of <b>sepsis</b></li>
+        <li>Pus or fluid draining from the injection site</li>
+        <li>Widespread hives, wheezing or throat swelling</li>
       </ul></div>
-      <p>I understand that if any of these occur I must contact Layali Clinic <b>immediately</b> on <b>07787&nbsp;708200</b> or, if severe, call <b>999</b> / attend A&amp;E. I understand HA filler can be dissolved with hyaluronidase, so acting quickly matters.</p>
+
+      <!-- Real, honest escalation block. We do NOT imply the mobile is monitored 24/7. -->
+      <div class="notice warn"><h4 style="margin:0 0 6px">If you need urgent help</h4>
+        <ul style="margin:0;padding-left:18px">
+          <li><b>Clinic hours:</b> call Layali Clinic on <b>07787&nbsp;708200</b> as soon as possible. The clinic mobile is answered during opening hours and is <b>not monitored 24/7</b>.</li>
+          <li><b>When the clinic is closed / out of hours:</b> the practitioner is not available on the clinic mobile overnight. For urgent advice, call <b>NHS 111</b>; for a life-threatening emergency (breathing difficulty, chest pain, collapse, severe bleeding, sudden visual loss) call <b>999</b> or go to your <b>nearest A&amp;E</b>.</li>
+          <li><b>Tell A&amp;E / 111 exactly what you have had:</b> show your <b>product-treatment card</b> and give the <b>product name, date, volume (ml) and injection sites</b>. This helps them treat you correctly and, if needed, arrange hyaluronidase.</li>
+          <li>You will be <b>given a product-treatment card</b> recording your filler details — keep it with you.</li>
+        </ul></div>
+
+      <p><b>Hyaluronidase is not a simple rescue.</b> Hyaluronidase may be considered for some HA-filler complications, but it does not guarantee complete removal or correction. Large-volume filler, infection, abscess, tissue damage or migrated material may require repeated treatment, aspiration, drainage, specialist referral or surgery. Hyaluronidase carries its own risks, including allergic reaction and rare anaphylaxis, and should not be used at sites of infection or malignancy.</p>
+
       <div class="f" data-group><div class="opts" data-min="1" data-single>
-        <label class="opt"><input type="checkbox" name="Vascular occlusion understanding" value="I understand vascular occlusion and serious complications are medical emergencies and what to do if they occur."><span>I understand these are emergencies and what to do if they occur.</span></label>
+        <label class="opt"><input type="checkbox" name="Emergency understanding" value="I understand the emergency warning signs, that I must escalate via the clinic during hours and NHS 111 / 999 / A&E out of hours, that I will be given a product-treatment card and must show it, and that hyaluronidase is not a guaranteed rescue."><span>I understand the emergency warning signs and the escalation route (clinic during hours; <b>NHS 111 / 999 / A&amp;E</b> out of hours), that I will be given a <b>product-treatment card</b> to show, and that hyaluronidase is <b>not a guaranteed rescue</b>.</span></label>
       </div><div class="err-msg">Please confirm to continue.</div></div>
     </div>
 
@@ -335,16 +465,56 @@ info.lushlips@gmail.com
     <!-- ===== 16. Longevity & breakdown ===== -->
     <div class="card prose">
       <div class="sec-h"><span class="sec-n">16</span><h2 class="sec-t">Longevity &amp; breakdown</h2></div>
-      <p>HA breast filler is naturally broken down (metabolised) by the body over time — typically around 12–18 months, though this varies. Factors such as high physical activity, fast metabolism, low body fat and lifestyle can affect how quickly it breaks down. Maintenance top-ups are usually needed to preserve the result.</p>
+      <p>HA breast filler is naturally broken down by the body over time. The visible cosmetic result is expected to reduce gradually, but the <b>rate of breakdown is unpredictable</b>. Residual filler may remain detectable on examination or imaging <b>beyond the expected cosmetic duration</b>, and complete disappearance by a particular date <b>cannot be guaranteed</b>. Maintenance top-ups are usually needed to preserve the result.</p>
       <div class="f" data-group><div class="opts" data-min="1" data-single>
-        <label class="opt"><input type="checkbox" name="Breakdown disclaimer" value="I understand breast filler is not permanent, results vary with personal and lifestyle factors, and I may need more than one session plus regular maintenance."><span>I understand breast filler is <b>not permanent</b>, results vary, and I may need more than one session plus <b>regular maintenance</b>.</span></label>
+        <label class="opt"><input type="checkbox" name="Breakdown disclaimer" value="I understand breast filler is not permanent, the rate of breakdown is unpredictable, residual filler may remain detectable beyond the expected cosmetic duration, complete disappearance by a set date cannot be guaranteed, and I may need more than one session plus regular maintenance."><span>I understand breast filler is <b>not permanent</b>, the rate of breakdown is <b>unpredictable</b>, residual filler may remain detectable beyond the expected cosmetic duration, and I may need more than one session plus <b>regular maintenance</b>.</span></label>
       </div><div class="err-msg">Please confirm to continue.</div></div>
+    </div>
+
+    <!-- ===== 16a. Psychological & voluntariness screening ===== -->
+    <div class="card">
+      <div class="sec-h"><span class="sec-n">16</span><h2 class="sec-t">Wellbeing &amp; your reasons for treatment</h2></div>
+      <div class="sec-d">These questions help us make sure treatment is right for you and freely chosen. There are no wrong answers.</div>
+      <div class="f" data-group><label class="q">Is anyone pressuring you to undergo this treatment? <span class="req">*</span></label>
+        <div class="opts" data-min="1" data-single>
+          <label class="opt"><input type="checkbox" name="Under pressure" value="No"><span>No</span></label>
+          <label class="opt"><input type="checkbox" name="Under pressure" value="Yes"><span>Yes</span></label>
+        </div><div class="err-msg">Please choose one.</div></div>
+      <div class="f" data-group><label class="q">Are you having this treatment primarily for yourself? <span class="req">*</span></label>
+        <div class="opts" data-min="1" data-single>
+          <label class="opt"><input type="checkbox" name="Treatment for yourself" value="Yes"><span>Yes</span></label>
+          <label class="opt"><input type="checkbox" name="Treatment for yourself" value="No"><span>No</span></label>
+        </div><div class="err-msg">Please choose one.</div></div>
+      <div class="f" data-group><label class="q">Have you previously been diagnosed with body dysmorphic disorder? <span class="req">*</span></label>
+        <div class="opts" data-min="1" data-single>
+          <label class="opt"><input type="checkbox" name="BDD diagnosis" value="No"><span>No</span></label>
+          <label class="opt"><input type="checkbox" name="BDD diagnosis" value="Yes"><span>Yes</span></label>
+          <label class="opt"><input type="checkbox" name="BDD diagnosis" value="Prefer not to say"><span>Prefer not to say</span></label>
+        </div><div class="err-msg">Please choose one.</div></div>
+      <div class="f" data-group><label class="q">Are you currently receiving treatment for an eating disorder or significant mental-health condition? <span class="req">*</span></label>
+        <div class="opts" data-min="1" data-single>
+          <label class="opt"><input type="checkbox" name="Mental health treatment" value="No"><span>No</span></label>
+          <label class="opt"><input type="checkbox" name="Mental health treatment" value="Yes"><span>Yes</span></label>
+          <label class="opt"><input type="checkbox" name="Mental health treatment" value="Prefer not to say"><span>Prefer not to say</span></label>
+        </div><div class="err-msg">Please choose one.</div></div>
+      <div class="f" data-group><label class="q">Do you expect breast filler to resolve major emotional, relationship or confidence difficulties? <span class="req">*</span></label>
+        <div class="opts" data-min="1" data-single>
+          <label class="opt"><input type="checkbox" name="Expect filler to resolve difficulties" value="No"><span>No</span></label>
+          <label class="opt"><input type="checkbox" name="Expect filler to resolve difficulties" value="Yes"><span>Yes</span></label>
+          <label class="opt"><input type="checkbox" name="Expect filler to resolve difficulties" value="Unsure"><span>Unsure</span></label>
+        </div><div class="err-msg">Please choose one.</div></div>
+      <div class="f" data-group><label class="q">Would you still want treatment if only a subtle improvement were achievable? <span class="req">*</span></label>
+        <div class="opts" data-min="1" data-single>
+          <label class="opt"><input type="checkbox" name="Happy with subtle improvement" value="Yes"><span>Yes</span></label>
+          <label class="opt"><input type="checkbox" name="Happy with subtle improvement" value="No"><span>No</span></label>
+          <label class="opt"><input type="checkbox" name="Happy with subtle improvement" value="Unsure"><span>Unsure</span></label>
+        </div><div class="err-msg">Please choose one.</div></div>
     </div>
 
     <!-- ===== 17. Final declaration & signature ===== -->
     <div class="card">
       <div class="sec-h"><span class="sec-n">17</span><h2 class="sec-t">Final consent declaration</h2></div>
-      <div class="prose" style="margin-bottom:8px"><p>I give my voluntary and informed consent to undergo non-surgical breast filler treatment, administered by a qualified practitioner at Layali Clinic. Please confirm each statement:</p></div>
+      <div class="prose" style="margin-bottom:8px"><p>This document supports, but does not replace, your consultation. Please ask questions about anything you do not understand. Signing confirms that the proposed treatment, alternatives, limitations and risks have been discussed with you and that you voluntarily consent to the agreed treatment plan. I give my voluntary and informed consent to undergo non-surgical breast filler treatment, administered by a qualified practitioner at Layali Clinic. Please confirm each statement:</p></div>
       <div class="f" data-group><label class="q">Please confirm all of the following <span class="req">*</span></label>
         <div class="opts" data-all>
           <label class="opt"><input type="checkbox" name="Final declaration" value="I have read, understood and agree to the procedure, risks, benefits, alternatives and side effects."><span>I have read, understood and agree to the procedure, risks, benefits, alternatives and side effects.</span></label>
@@ -357,6 +527,7 @@ info.lushlips@gmail.com
           <label class="opt"><input type="checkbox" name="Final declaration" value="I understand and accept the clinic's non-refundable payment and cancellation policy."><span>I understand and accept the non-refundable payment &amp; cancellation policy.</span></label>
           <label class="opt"><input type="checkbox" name="Final declaration" value="In a medical emergency, I authorise the clinic to take appropriate action and contact emergency services if necessary."><span>In an emergency, I authorise the clinic to take appropriate action and contact emergency services.</span></label>
           <label class="opt"><input type="checkbox" name="Final declaration" value="I can read and understand English and give this consent freely without coercion."><span>I can read and understand English and give this consent freely.</span></label>
+          <label class="opt"><input type="checkbox" name="Final declaration" value="I understand that I may withdraw my consent at any time, including during treatment. If I ask for the procedure to stop, the practitioner will stop as soon as it is clinically safe to do so and will explain any immediate steps required to protect my safety."><span>I understand that I may <b>withdraw my consent at any time, including during treatment</b>. If I ask for the procedure to stop, the practitioner will stop as soon as it is clinically safe to do so and will explain any immediate steps required to protect my safety.</span></label>
         </div><div class="err-msg">Please confirm all statements to proceed.</div></div>
 
       <div class="f" data-group><div class="opts" data-min="1" data-single>
