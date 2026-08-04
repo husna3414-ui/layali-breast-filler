@@ -69,8 +69,9 @@ info.lushlips@gmail.com
       <div class="f"><label class="q">Mobile number <span class="req">*</span></label><input type="tel" name="Mobile number" required></div>
       <div class="f"><label class="q">Address <span class="req">*</span></label>
         <input type="text" name="Street address" placeholder="Street address" required style="margin-bottom:10px">
-        <div class="row" style="margin-bottom:10px"><input type="text" name="City" placeholder="City" required><input type="text" name="Postcode" placeholder="Postcode" required></div>
-        <input type="text" name="Country" placeholder="Country" value="United Kingdom" required></div>
+        <input type="text" name="Street address line 2" placeholder="Street address line 2 (optional)" style="margin-bottom:10px">
+        <div class="row" style="margin-bottom:10px"><input type="text" name="City" placeholder="City" required><input type="text" name="County / State" placeholder="County / State"></div>
+        <div class="row" style="margin-bottom:10px"><input type="text" name="Postcode" placeholder="Postcode" required><input type="text" name="Country" placeholder="Country" value="United Kingdom" required></div></div>
       <div class="f" data-group><label class="q">Age confirmation <span class="req">*</span></label>
         <div class="opts" data-min="1" data-single>
           <label class="opt"><input type="checkbox" name="Age confirmation" value="I confirm I am aged 18 or over"><span>I confirm that I am aged <b>18 or over</b>.</span></label>
@@ -92,10 +93,18 @@ info.lushlips@gmail.com
       <div class="f" data-group><label class="q">What are your main goals? <span class="req">*</span><div class="hint">Tick all that apply.</div></label>
         <div class="opts grid-opts" data-min="1">
           <label class="opt"><input type="checkbox" name="Main goals" value="Add subtle volume"><span>Add subtle volume</span></label>
+          <label class="opt"><input type="checkbox" name="Main goals" value="Fuller cleavage"><span>Fuller cleavage</span></label>
           <label class="opt"><input type="checkbox" name="Main goals" value="Define / soften cleavage"><span>Define / soften cleavage</span></label>
           <label class="opt"><input type="checkbox" name="Main goals" value="Improve upper-pole fullness"><span>Improve upper-pole fullness</span></label>
+          <label class="opt"><input type="checkbox" name="Main goals" value="Rounder upper pole (top of the breast)"><span>Rounder upper pole</span></label>
           <label class="opt"><input type="checkbox" name="Main goals" value="Improve asymmetry between sides"><span>Improve asymmetry</span></label>
+          <label class="opt"><input type="checkbox" name="Main goals" value="Correct implant asymmetry"><span>Correct implant asymmetry</span></label>
           <label class="opt"><input type="checkbox" name="Main goals" value="Restore volume after weight loss / breastfeeding"><span>Restore lost volume</span></label>
+          <label class="opt"><input type="checkbox" name="Main goals" value="Lift without surgery"><span>Lift without surgery</span></label>
+          <label class="opt"><input type="checkbox" name="Main goals" value="Smooth out rippling or implant edges"><span>Smooth rippling / implant edges</span></label>
+          <label class="opt"><input type="checkbox" name="Main goals" value="Define and contour side profile"><span>Define / contour side profile</span></label>
+          <label class="opt"><input type="checkbox" name="Main goals" value="Improve projection (how far they sit forward)"><span>Improve projection</span></label>
+          <label class="opt"><input type="checkbox" name="Main goals" value="Confidence boost / body proportion balance"><span>Confidence / body-proportion balance</span></label>
           <label class="opt"><input type="checkbox" name="Main goals" value="Other"><span>Other</span></label>
         </div><div class="err-msg">Please select at least one.</div></div>
       <div class="f" data-group><label class="q">Your preferred outcome <span class="req">*</span></label>
@@ -104,7 +113,27 @@ info.lushlips@gmail.com
           <label class="opt"><input type="checkbox" name="Preferred outcome" value="A little more noticeable fullness"><span>A little more noticeable fullness</span></label>
           <label class="opt"><input type="checkbox" name="Preferred outcome" value="Not sure — need advice from practitioner"><span>Not sure — need advice</span></label>
         </div><div class="err-msg">Please choose one.</div></div>
-      <div class="f"><label class="q">Anything else you'd like us to know about your goals?</label><textarea name="Other goals notes"></textarea></div>
+      <!-- Preferred aesthetic style — tick all that appeal to you; helps the practitioner understand the look you want. -->
+      <div class="f" data-group><label class="q">Which of these best describe the look you'd like? <span class="req">*</span><div class="hint">Tick any that appeal to you.</div></label>
+        <div class="opts grid-opts" data-min="1">
+          <label class="opt"><input type="checkbox" name="Preferred aesthetic style" value="Subtle and natural-looking enhancement"><span>Subtle and natural-looking enhancement</span></label>
+          <label class="opt"><input type="checkbox" name="Preferred aesthetic style" value="Noticeable but still natural volume"><span>Noticeable but still natural volume</span></label>
+          <label class="opt"><input type="checkbox" name="Preferred aesthetic style" value="High cleavage and upper pole fullness"><span>High cleavage and upper-pole fullness</span></label>
+          <label class="opt"><input type="checkbox" name="Preferred aesthetic style" value="Balanced, round, and projected shape"><span>Balanced, round and projected shape</span></label>
+          <label class="opt"><input type="checkbox" name="Preferred aesthetic style" value="Soft and teardrop-shaped appearance"><span>Soft, teardrop-shaped appearance</span></label>
+          <label class="opt"><input type="checkbox" name="Preferred aesthetic style" value="Lifted and perkier profile"><span>Lifted and perkier profile</span></label>
+          <label class="opt"><input type="checkbox" name="Preferred aesthetic style" value="Correct asymmetry or contour irregularities"><span>Correct asymmetry / contour irregularities</span></label>
+          <label class="opt"><input type="checkbox" name="Preferred aesthetic style" value="Enhanced side view and silhouette"><span>Enhanced side view and silhouette</span></label>
+        </div><div class="err-msg">Please select at least one.</div></div>
+      <div class="f"><label class="q">Anything else you'd like us to know about your breasts, goals or preferences?</label><textarea name="Other goals notes"></textarea></div>
+      <!-- Photo assessment — this form produces a signed PDF and cannot carry an image upload,
+           so we ask the client to send/bring photos and confirm they understand. -->
+      <div class="notice">For assessment we may ask for a clear, well-lit photo of the treatment area. Please <b>email photos to info.lushlips@gmail.com</b> before your appointment, or bring them with you. Do not attach photos to this form.</div>
+      <div class="f" data-group><label class="q">Photo for assessment <span class="req">*</span></label>
+        <div class="opts" data-min="1" data-single>
+          <label class="opt"><input type="checkbox" name="Assessment photo" value="I will email or bring a photo before treatment"><span>I will email or bring a photo before my treatment.</span></label>
+          <label class="opt"><input type="checkbox" name="Assessment photo" value="I prefer to have my photo taken at the clinic"><span>I'd prefer my photo to be taken at the clinic.</span></label>
+        </div><div class="err-msg">Please choose one.</div></div>
     </div>
 
     <!-- ===== 3. Filler-quantity expectations (disclaimer) ===== -->
@@ -129,7 +158,19 @@ info.lushlips@gmail.com
         <div class="opts grid-opts" data-min="1" data-none="None of the above">
           <label class="opt"><input type="checkbox" name="Medical conditions" value="Heart / cardiac disease"><span>Heart / cardiac disease</span></label>
           <label class="opt"><input type="checkbox" name="Medical conditions" value="High blood pressure"><span>High blood pressure</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Asthma"><span>Asthma</span></label>
           <label class="opt"><input type="checkbox" name="Medical conditions" value="Diabetes"><span>Diabetes</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Epilepsy"><span>Epilepsy</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Seizure disorder"><span>Seizure disorder</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Arthritis"><span>Arthritis</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Mental health condition"><span>Mental health condition</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Psychiatric disorder"><span>Psychiatric disorder</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Hormone imbalance"><span>Hormone imbalance</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Parkinson's disease"><span>Parkinson's disease</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Myasthenia gravis"><span>Myasthenia gravis</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Multiple sclerosis (MS)"><span>Multiple sclerosis (MS)</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Lambert-Eaton syndrome"><span>Lambert-Eaton syndrome</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Amyotrophic lateral sclerosis (ALS)"><span>Amyotrophic lateral sclerosis (ALS)</span></label>
           <label class="opt"><input type="checkbox" name="Medical conditions" value="Bleeding or clotting disorder"><span>Bleeding / clotting disorder</span></label>
           <label class="opt"><input type="checkbox" name="Medical conditions" value="History of excessive bruising"><span>History of excessive bruising</span></label>
           <label class="opt"><input type="checkbox" name="Medical conditions" value="Autoimmune disease"><span>Autoimmune disease</span></label>
@@ -142,6 +183,8 @@ info.lushlips@gmail.com
           <label class="opt"><input type="checkbox" name="Medical conditions" value="Keloid or hypertrophic scarring"><span>Keloid / hypertrophic scarring</span></label>
           <label class="opt"><input type="checkbox" name="Medical conditions" value="Poor wound healing"><span>Poor wound healing</span></label>
           <label class="opt"><input type="checkbox" name="Medical conditions" value="Skin condition or infection on the chest"><span>Skin condition / infection on chest</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Skin lesions"><span>Skin lesions</span></label>
+          <label class="opt"><input type="checkbox" name="Medical conditions" value="Using contraception / birth control pills"><span>Using contraception / birth control pills</span></label>
           <label class="opt"><input type="checkbox" name="Medical conditions" value="Herpes / frequent cold sores"><span>Herpes / cold sores</span></label>
           <label class="opt"><input type="checkbox" name="Medical conditions" value="HIV / Hepatitis"><span>HIV / Hepatitis</span></label>
           <label class="opt"><input type="checkbox" name="Medical conditions" value="Liver or kidney disease"><span>Liver / kidney disease</span></label>
@@ -186,6 +229,14 @@ info.lushlips@gmail.com
       <div class="f" data-group><div class="opts" data-min="1" data-single>
         <label class="opt"><input type="checkbox" name="Future pregnancy acknowledgement" value="I understand that long-term effects on future breastfeeding may not be established, that pregnancy may alter my result and make filler-related changes harder to assess, that any breast symptom in pregnancy/breastfeeding still needs medical assessment, and that I must disclose my filler history to maternity and breast-health teams."><span>I understand these points about future pregnancy and breastfeeding, and that I must disclose my breast-filler history to any maternity and breast-health teams.</span></label>
       </div><div class="err-msg">Please confirm to continue.</div></div>
+
+      <!-- Pregnancy & Health Declaration — required 3-part confirmation (all must be ticked). -->
+      <div class="f" data-group><label class="q">Pregnancy &amp; health declaration — please confirm all <span class="req">*</span></label>
+        <div class="opts" data-all>
+          <label class="opt"><input type="checkbox" name="Pregnancy & health declaration" value="I do not have a history of hypersensitivity or severe reactions to medications."><span>I do <b>not</b> have a history of hypersensitivity or severe reactions to medications.</span></label>
+          <label class="opt"><input type="checkbox" name="Pregnancy & health declaration" value="I do not have any major illnesses or immune-compromising conditions."><span>I do <b>not</b> have any major illnesses or immune-compromising conditions.</span></label>
+          <label class="opt"><input type="checkbox" name="Pregnancy & health declaration" value="I am not pregnant, trying to conceive, or breastfeeding."><span>I am <b>not</b> pregnant, trying to conceive, or breastfeeding.</span></label>
+        </div><div class="err-msg">Please confirm all three to continue (contact the clinic if any do not apply to you).</div></div>
     </div>
 
     <!-- ===== 6. Allergies ===== -->
@@ -197,6 +248,13 @@ info.lushlips@gmail.com
           <label class="opt"><input type="checkbox" name="Allergies" value="Lidocaine / local anaesthetic"><span>Lidocaine / local anaesthetic</span></label>
           <label class="opt"><input type="checkbox" name="Allergies" value="Bee / wasp sting (hyaluronidase note)"><span>Bee / wasp sting</span></label>
           <label class="opt"><input type="checkbox" name="Allergies" value="Antibiotics"><span>Antibiotics</span></label>
+          <label class="opt"><input type="checkbox" name="Allergies" value="Penicillin"><span>Penicillin</span></label>
+          <label class="opt"><input type="checkbox" name="Allergies" value="Aspirin"><span>Aspirin</span></label>
+          <label class="opt"><input type="checkbox" name="Allergies" value="Hydrocortisone"><span>Hydrocortisone</span></label>
+          <label class="opt"><input type="checkbox" name="Allergies" value="Hydroquinone"><span>Hydroquinone</span></label>
+          <label class="opt"><input type="checkbox" name="Allergies" value="Skin bleaching agents"><span>Skin bleaching agents</span></label>
+          <label class="opt"><input type="checkbox" name="Allergies" value="Food / eggs"><span>Food / eggs</span></label>
+          <label class="opt"><input type="checkbox" name="Allergies" value="Animal protein"><span>Animal protein</span></label>
           <label class="opt"><input type="checkbox" name="Allergies" value="Latex"><span>Latex</span></label>
           <label class="opt"><input type="checkbox" name="Allergies" value="Chlorhexidine / antiseptic"><span>Chlorhexidine / antiseptic</span></label>
           <label class="opt"><input type="checkbox" name="Allergies" value="Plasters / dressings"><span>Plasters / dressings</span></label>
@@ -222,6 +280,12 @@ info.lushlips@gmail.com
           <label class="opt"><input type="checkbox" name="Medications" value="Vitamin E"><span>Vitamin E</span></label>
           <label class="opt"><input type="checkbox" name="Medications" value="Ginkgo biloba"><span>Ginkgo biloba</span></label>
           <label class="opt"><input type="checkbox" name="Medications" value="High-dose garlic / ginger / turmeric"><span>Garlic / ginger / turmeric</span></label>
+          <label class="opt"><input type="checkbox" name="Medications" value="Cayenne"><span>Cayenne</span></label>
+          <label class="opt"><input type="checkbox" name="Medications" value="Licorice"><span>Licorice</span></label>
+          <label class="opt"><input type="checkbox" name="Medications" value="Flaxseed oil"><span>Flaxseed oil</span></label>
+          <label class="opt"><input type="checkbox" name="Medications" value="CoQ10"><span>CoQ10</span></label>
+          <label class="opt"><input type="checkbox" name="Medications" value="Hormones / HRT"><span>Hormones / HRT</span></label>
+          <label class="opt"><input type="checkbox" name="Medications" value="Mood-altering / anti-depression medication"><span>Mood-altering / anti-depression medication</span></label>
           <label class="opt"><input type="checkbox" name="Medications" value="None of the above"><span>None of the above</span></label>
         </div><div class="err-msg">Please make a selection.</div></div>
     </div>
@@ -241,7 +305,12 @@ info.lushlips@gmail.com
           <label class="opt"><input type="checkbox" name="Contraindications" value="Autoimmune or immune-affecting condition"><span>Autoimmune / immune condition</span></label>
           <label class="opt"><input type="checkbox" name="Contraindications" value="Known allergy to HA filler, lidocaine or product components"><span>Allergy to HA / lidocaine / product</span></label>
           <label class="opt"><input type="checkbox" name="Contraindications" value="Previous permanent (non-HA) filler in the area"><span>Previous permanent filler in area</span></label>
+          <label class="opt"><input type="checkbox" name="Contraindications" value="Previous injection of permanent products"><span>Previous injection of permanent products</span></label>
           <label class="opt"><input type="checkbox" name="Contraindications" value="Recent surgery or aesthetic treatment on the chest"><span>Recent surgery / treatment on chest</span></label>
+          <label class="opt"><input type="checkbox" name="Contraindications" value="Complications after surgery within the past 5 years"><span>Complications after surgery in past 5 years</span></label>
+          <label class="opt"><input type="checkbox" name="Contraindications" value="Untreated infectious periodontitis, cellulitis, or dental or ENT conditions"><span>Untreated periodontitis / cellulitis / dental or ENT condition</span></label>
+          <label class="opt"><input type="checkbox" name="Contraindications" value="Recent or planned peeling, laser or ultrasound treatment to the area"><span>Recent / planned peel, laser or ultrasound to area</span></label>
+          <label class="opt"><input type="checkbox" name="Contraindications" value="Professional or competitive sportsperson (potential for a positive doping test)"><span>Competitive sportsperson (possible doping-test result)</span></label>
           <label class="opt"><input type="checkbox" name="Contraindications" value="Due breast screening / recent mammogram"><span>Due / recent breast screening</span></label>
           <label class="opt"><input type="checkbox" name="Contraindications" value="None of the above"><span>None of the above</span></label>
         </div><div class="err-msg">Please make a selection.</div></div>
@@ -526,6 +595,7 @@ info.lushlips@gmail.com
           <label class="opt"><input type="checkbox" name="Final declaration" value="I will follow all aftercare instructions and inform the clinic of any changes to my medical history before or after treatment."><span>I will follow all aftercare instructions and inform the clinic of any changes to my medical history.</span></label>
           <label class="opt"><input type="checkbox" name="Final declaration" value="I understand and accept the clinic's non-refundable payment and cancellation policy."><span>I understand and accept the non-refundable payment &amp; cancellation policy.</span></label>
           <label class="opt"><input type="checkbox" name="Final declaration" value="In a medical emergency, I authorise the clinic to take appropriate action and contact emergency services if necessary."><span>In an emergency, I authorise the clinic to take appropriate action and contact emergency services.</span></label>
+          <label class="opt"><input type="checkbox" name="Final declaration" value="I confirm the practitioner is suitably qualified, and I agree to behave respectfully and follow reasonable clinic instructions during my appointment."><span>I confirm the practitioner is suitably qualified, and I agree to <b>behave respectfully</b> and follow reasonable clinic instructions during my appointment.</span></label>
           <label class="opt"><input type="checkbox" name="Final declaration" value="I can read and understand English and give this consent freely without coercion."><span>I can read and understand English and give this consent freely.</span></label>
           <label class="opt"><input type="checkbox" name="Final declaration" value="I understand that I may withdraw my consent at any time, including during treatment. If I ask for the procedure to stop, the practitioner will stop as soon as it is clinically safe to do so and will explain any immediate steps required to protect my safety."><span>I understand that I may <b>withdraw my consent at any time, including during treatment</b>. If I ask for the procedure to stop, the practitioner will stop as soon as it is clinically safe to do so and will explain any immediate steps required to protect my safety.</span></label>
         </div><div class="err-msg">Please confirm all statements to proceed.</div></div>
